@@ -1,0 +1,23 @@
+@model Project.Models.Models.Vm_Pay;
+
+<form action="/home/pay" method="post">
+    <div class="form-group">
+        <label>phinenumber</label>
+        <input asp-for="Vm_PhoneNumber" class="form-control" type="text">
+    </div>
+    <div class="form-group">
+        <label>Email</label>
+        <input asp-for="Vm_Email" class="form-control" type="text">
+    </div>
+    <div class="form-group">
+        <label>Detail</label>
+        <input asp-for="Vm_Detail" class="form-control" type="text">
+    </div>
+    <div class="form-group">
+        <label>price</label>
+        <input asp-for="Vm_Price" class="form-control" type="text">
+    </div>
+    <div class="form-group">
+        <button type="submit">pay</button>
+    </div>
+</form>
